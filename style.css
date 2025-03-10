@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(78, 78, 87);
+    color:rgb(59, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family:sans-serif;
+}
+
+:root {
+    --white:#ffffff;
+    --off-white:#e5e5e5;
+    --transp-white-1:rgba(255,255,255,0.25);
+    --transp-white-2:rgba(255,255,255,0.1);
+    --shadow:rgba(3,46,87,0.2);
+}
+
+.container {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+h1 {
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom:2em;
+}
+
+h2 {
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin: 2em 0;
+}
+#Countdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+
+}
+
+#Countdown div {
+    background-color: var(--off-white);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 33.3%;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: large;
+    color: rgb(60, 68, 68);
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    border: 2px solid var(--transp-white-2);
+
+
+}
+
+span {
+    font-size: xxx-large;
+}
+
+.progress-container {
+    margin: 2em 0;
+    background-color:var(--transp-white-1);
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    background-color:rgb(215, 209, 209);
+    width: 0%;
+    height: 100%;
+    transition:width 1s ease-in-out;
+    border-radius: 5px;
+
+}
